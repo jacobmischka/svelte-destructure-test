@@ -1,0 +1,15 @@
+{
+  "name": "svelte-destructure-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^0.50.0",
+    "rollup-plugin-svelte": "^3.1.0",
+    "svelte": "^1.40.2",
+    "svelte-cli": "^1.4.0"
+  }
+}

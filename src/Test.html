@@ -1,0 +1,29 @@
+<div>
+	{{#each Object.entries(map) as [key, value], i}}
+		<h2>{{ key }}: {{ i }}</h2>
+		{{#each Object.entries(value) as [subkey, subvalue], j}}
+			<p>
+				{{subkey}}: {{subvalue}}
+			</p>
+		{{/each}}
+	{{/each}}
+</div>
+
+<script>
+export default {
+	data() {
+		return {
+			map: {
+				key: {
+					subkey: 'subval',
+					subkey2: 'subval2'
+				},
+				anotherKey: {
+					anotherSubkey: 'anotherSubval',
+					anotherSubkey2: 'anotherSubval2'
+				}
+			}
+		};
+	}
+};
+</script>
